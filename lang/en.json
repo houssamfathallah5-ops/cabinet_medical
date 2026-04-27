@@ -61,5 +61,12 @@
     "General Consultation": "General Consultation",
     "Wed, 26 April": "Wed, 26 April",
     "+24 this week": "+24 this week",
-    "All rights reserved.": "All rights reserved."
+    "All rights reserved.": "All rights reserved.",
+    "Envoyer un Email": "Send an Email",
+    "Destinataire (Email)": "Recipient (Email)",
+    "Sujet": "Subject",
+    "Message": "Message",
+    "Envoyer": "Send",
+    "L'email a été envoyé avec succès.": "The email has been sent successfully.",
+    "Erreur lors de l'envoi de l'email: ": "Error sending email: "
 }

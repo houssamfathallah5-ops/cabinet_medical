@@ -97,6 +97,9 @@
             <x-responsive-nav-link :href="route('patients.index')" :active="request()->routeIs('patients.*')" class="rounded-xl font-bold">
                 {{ __('Patients') }}
             </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('email.create')" :active="request()->routeIs('email.*')" class="rounded-xl font-bold">
+                {{ __('Email') }}
+            </x-responsive-nav-link>
         </div>
 
         <!-- Responsive Settings Options -->

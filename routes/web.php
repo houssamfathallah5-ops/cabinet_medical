@@ -34,6 +34,9 @@ Route::middleware('auth')->group(function () {
 
     Route::resource('patients', \App\Http\Controllers\PatientController::class)->parameters(['patients' => 'patient']);
     Route::get('/services', [\App\Http\Controllers\ServiceController::class, 'index'])->name('services.index');
+
+    Route::get('/email', [\App\Http\Controllers\EmailController::class, 'create'])->name('email.create');
+    Route::post('/email', [\App\Http\Controllers\EmailController::class, 'send'])->name('email.send');
 });
 
 require __DIR__.'/auth.php';
