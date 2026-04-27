@@ -33,7 +33,7 @@ Route::middleware('auth')->group(function () {
     Route::resource('appointments', \App\Http\Controllers\AppointmentController::class);
 
     Route::resource('patients', \App\Http\Controllers\PatientController::class)->parameters(['patients' => 'patient']);
-    Route::get('/services', [\App\Http\Controllers\ServiceController::class, 'index'])->name('services.index');
+    Route::resource('services', \App\Http\Controllers\ServiceController::class);
 
     Route::get('/email', [\App\Http\Controllers\EmailController::class, 'create'])->name('email.create');
     Route::post('/email', [\App\Http\Controllers\EmailController::class, 'send'])->name('email.send');
