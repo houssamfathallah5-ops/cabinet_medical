@@ -7,11 +7,11 @@
 
         <title>{{ config('app.name', 'Laravel') }}</title>
 
-        <!-- Fonts -->
+        
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=outfit:400,500,600,700,800&display=swap" rel="stylesheet" />
 
-        <!-- Tailwind, Alpine.js and Axios CDN for demonstration -->
+        
         <script src="https://cdn.tailwindcss.com"></script>
         <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -77,7 +77,7 @@
     <body class="font-sans antialiased text-slate-900 bg-[#f8fafc]">
         <div class="fixed inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-50 via-white to-indigo-50/30"></div>
         <div class="flex min-h-screen overflow-hidden">
-            <!-- Sidebar -->
+            
             <aside class="hidden lg:flex flex-col w-72 premium-sidebar border-r border-slate-200/60 shadow-xl shadow-slate-200/20 z-20">
                 <div class="p-8 flex items-center gap-4">
                     <div class="w-12 h-12 medical-gradient rounded-2xl flex items-center justify-center text-white shadow-lg shadow-indigo-200">
@@ -136,13 +136,13 @@
                 </div>
             </aside>
 
-            <!-- Main Content Area -->
+            
             <div class="flex-1 flex flex-col min-w-0 overflow-hidden">
                 <div class="glass-header z-10">
                     @include('layouts.navigation')
                 </div>
 
-                <!-- Page Content -->
+                
                 <main class="flex-1 overflow-y-auto">
                     <div class="max-w-[1600px] mx-auto p-6 lg:p-10">
                         {{ $slot }}

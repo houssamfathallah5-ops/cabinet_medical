@@ -8,7 +8,7 @@
         </p>
     </div>
 
-    <!-- Stats Grid -->
+    
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
         <div class="premium-card p-8 group">
             <div class="flex items-center gap-6">
@@ -48,7 +48,7 @@
     </div>
 
     <div class="grid grid-cols-1 xl:grid-cols-3 gap-8">
-        <!-- Recent Appointments -->
+        
         <div class="xl:col-span-2 premium-card p-10">
             <div class="flex items-center justify-between mb-8">
                 <h3 class="text-xl font-black text-slate-900 uppercase tracking-tight">{{ __('Recent Appointments') }}</h3>
@@ -75,7 +75,7 @@
             </div>
         </div>
 
-        <!-- Quick Actions -->
+        
         <div class="premium-card p-10 medical-gradient text-white border-none relative overflow-hidden flex flex-col">
             <div class="absolute -top-10 -right-10 w-48 h-48 bg-white/10 rounded-full blur-3xl"></div>
             <div class="absolute -bottom-10 -left-10 w-48 h-48 bg-indigo-900/10 rounded-full blur-3xl"></div>

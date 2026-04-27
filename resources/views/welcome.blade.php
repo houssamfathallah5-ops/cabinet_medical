@@ -42,13 +42,13 @@
     </head>
     <body class="antialiased">
         <div class="relative min-h-screen overflow-hidden">
-            <!-- Background Decorative Elements -->
+            
             <div class="absolute top-0 left-0 w-full h-full -z-10 bg-[#f8fafc]">
                 <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-100/50 rounded-full blur-[120px]"></div>
                 <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-teal-50/50 rounded-full blur-[120px]"></div>
             </div>
 
-            <!-- Navigation -->
+            
             <nav class="max-w-7xl mx-auto px-6 py-8 flex items-center justify-between">
                 <div class="flex items-center gap-2">
                     <div class="w-10 h-10 medical-gradient rounded-xl flex items-center justify-center text-white shadow-lg">
@@ -71,7 +71,7 @@
                 </div>
             </nav>
 
-            <!-- Hero Section -->
+            
             <main class="max-w-7xl mx-auto px-6 pt-16 pb-24">
                 <div class="grid lg:grid-cols-2 gap-12 items-center">
                     <div>
@@ -148,7 +148,7 @@
                 </div>
             </main>
 
-            <!-- Footer -->
+            
             <footer class="max-w-7xl mx-auto px-6 py-12 border-t border-slate-200">
                 <div class="flex flex-col md:flex-row items-center justify-between gap-6">
                     <p class="text-slate-500 text-sm">

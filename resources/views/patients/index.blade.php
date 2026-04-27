@@ -89,7 +89,7 @@
         </div>
     </div>
 
-    <!-- Add Patient Modal -->
+    
     <x-modal name="add-patient" :show="false" focusable>
         <form method="post" action="{{ route('patients.store') }}" class="p-6">
             @csrf
@@ -119,7 +119,7 @@
         </form>
     </x-modal>
 
-    <!-- Edit Patient Modal -->
+    
     <x-modal name="edit-patient" :show="false" focusable>
         <form id="editPatientForm" method="post" class="p-6">
             @csrf
@@ -146,7 +146,7 @@
         </form>
     </x-modal>
 
-    <!-- Delete Patient Modal -->
+    
     <x-modal name="confirm-patient-deletion" :show="false" focusable>
         <form id="deletePatientForm" method="post" class="p-6">
             @csrf

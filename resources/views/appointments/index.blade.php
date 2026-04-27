@@ -41,7 +41,7 @@
         @include('appointments.partials.table')
     </div>
 
-    <!-- Add Modal -->
+    
     <x-modal name="add-appointment" :show="false" focusable>
         <form method="post" action="{{ route('appointments.store') }}" class="p-6">
             @csrf
@@ -87,7 +87,7 @@
         </form>
     </x-modal>
 
-    <!-- Edit Modal -->
+    
     <x-modal name="edit-appointment" :show="false" focusable>
         <form id="editForm" method="post" class="p-6">
             @csrf
@@ -118,7 +118,7 @@
         </form>
     </x-modal>
 
-    <!-- Delete Modal -->
+    
     <x-modal name="confirm-appointment-deletion" :show="false" focusable>
         <form id="deleteForm" method="post" class="p-6">
             @csrf

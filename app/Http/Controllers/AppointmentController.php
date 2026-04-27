@@ -6,9 +6,7 @@ use Illuminate\Http\Request;
 
 class AppointmentController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+    
     public function index(Request $request)
     {
         $appointments = \App\Models\Appointment::with(['patient', 'doctor', 'service'])
@@ -54,7 +52,6 @@ class AppointmentController extends Controller
 
         $appointment = \App\Models\Appointment::create($validated);
 
-        // Send email
         \Illuminate\Support\Facades\Mail::to($appointment->patient->email)->send(new \App\Mail\AppointmentConfirmed($appointment));
 
         return redirect()->route('appointments.index')->with('success', __('Appointment created successfully.'));

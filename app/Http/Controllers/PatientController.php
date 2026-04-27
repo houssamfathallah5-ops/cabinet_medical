@@ -47,7 +47,7 @@ class PatientController extends Controller
 
     public function destroy(\App\Models\User $patient)
     {
-        // Delete associated appointments first to avoid foreign key issues
+        
         $patient->appointments()->delete();
         $patient->delete();
 

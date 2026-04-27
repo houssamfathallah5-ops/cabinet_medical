@@ -1,8 +1,8 @@
 <nav x-data="{ open: false }" class="border-none bg-transparent">
-    <!-- Primary Navigation Menu -->
+    
     <div class="max-w-[1600px] mx-auto px-6 lg:px-10">
         <div class="flex justify-between h-20 items-center">
-            <!-- Left side (Mobile Logo) -->
+            
             <div class="flex items-center lg:hidden gap-3">
                 <div class="w-10 h-10 medical-gradient rounded-xl flex items-center justify-center text-white shadow-lg">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
@@ -12,7 +12,7 @@
 
             <div class="flex-1"></div>
 
-            <!-- Settings Dropdown (Desktop) -->
+            
             <div class="hidden sm:flex sm:items-center sm:ms-6 gap-4">
                 <div class="flex items-center gap-2 px-4 py-2 bg-indigo-50 rounded-xl text-indigo-600">
                     <span class="w-2 h-2 rounded-full bg-indigo-500 animate-pulse"></span>
@@ -56,7 +56,7 @@
 
                         <div class="border-t border-slate-50"></div>
 
-                        <!-- Authentication -->
+                        
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
                             <x-dropdown-link :href="route('logout')"
@@ -73,7 +73,7 @@
                 </x-dropdown>
             </div>
 
-            <!-- Hamburger -->
+            
             <div class="-me-2 flex items-center sm:hidden">
                 <button @click="open = ! open" class="inline-flex items-center justify-center p-2.5 rounded-xl text-slate-400 hover:text-indigo-600 hover:bg-indigo-50 transition duration-150">
                     <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
@@ -85,7 +85,7 @@
         </div>
     </div>
 
-    <!-- Responsive Navigation Menu -->
+    
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden bg-white border-b border-slate-100 shadow-xl overflow-hidden rounded-b-3xl">
         <div class="pt-4 pb-3 space-y-1 px-4">
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" class="rounded-xl font-bold">
@@ -102,7 +102,7 @@
             </x-responsive-nav-link>
         </div>
 
-        <!-- Responsive Settings Options -->
+        
         <div class="pt-6 pb-6 border-t border-slate-50 bg-slate-50/50 px-8">
             <div class="flex items-center gap-4 mb-6">
                 <img class="w-12 h-12 rounded-xl border-2 border-white shadow-sm" src="https://ui-avatars.com/api/?name={{ urlencode(Auth::user()->name) }}&background=6366f1&color=fff" alt="Avatar">
@@ -117,7 +117,7 @@
                     {{ __('Profile Settings') }}
                 </x-responsive-nav-link>
 
-                <!-- Authentication -->
+                
                 <form method="POST" action="{{ route('logout') }}">
                     @csrf
                     <x-responsive-nav-link :href="route('logout')"
